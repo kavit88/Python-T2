@@ -1,0 +1,10 @@
+VanRossum 14:22 14:37
+Stroustrup 08:22 09:10
+Richie 11:23 13:05
+Armstrong 12:57: 14:15
+Wall 10:03 10:28
+Wirth 13:47 16:33  
+Bachus 09:28 10:18
+Matz 08:05 10:23
+Eich 11:23 12:05
+Gosling 12:14: 13:47
