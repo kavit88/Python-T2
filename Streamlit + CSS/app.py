@@ -3,18 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# --------------------------------------------------
-# PAGE CONFIG
-# --------------------------------------------------
 st.set_page_config(
     page_title="Advanced Bootstrap Streamlit App",
     page_icon="📊",
     layout="wide"
 )
 
-# --------------------------------------------------
-# LOAD BOOTSTRAP + ICONS + CSS
-# --------------------------------------------------
 st.markdown("""
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -23,9 +17,6 @@ st.markdown("""
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# --------------------------------------------------
-# HEADER (PURE HTML)
-# --------------------------------------------------
 st.markdown("""
 <div class="container-fluid bg-primary text-white p-4 rounded">
     <h1 class="text-center">
@@ -38,19 +29,15 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --------------------------------------------------
-# DATA
-# --------------------------------------------------
+
 x = np.arange(1, 11)
 y = np.random.randint(50, 100, 10)
 
-# --------------------------------------------------
-# BOOTSTRAP GRID START
-# --------------------------------------------------
+
 st.markdown('<div class="container custom-container">', unsafe_allow_html=True)
 st.markdown('<div class="row g-4">', unsafe_allow_html=True)
 
-# ---------- CARD 1 : LINE CHART ----------
+
 st.markdown('<div class="col-md-6">', unsafe_allow_html=True)
 st.markdown("""
 <div class="chart-card">
@@ -71,7 +58,7 @@ st.pyplot(plt)
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ---------- CARD 2 : HISTOGRAM ----------
+
 st.markdown('<div class="col-md-6">', unsafe_allow_html=True)
 st.markdown("""
 <div class="chart-card">
@@ -95,9 +82,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
-# --------------------------------------------------
-# STREAMLIT BUILT-IN CHARTS (CARD STYLE)
-# --------------------------------------------------
+
 st.markdown("""
 <div class="container mt-4">
     <div class="chart-card">
@@ -115,3 +100,4 @@ df = pd.DataFrame({"Marks": y})
 st.line_chart(df)
 st.bar_chart(df)
 st.area_chart(df)
+
