@@ -1,0 +1,14 @@
+.stApp {
+    background-color: #f1f3f6;
+}
+
+.custom-container {
+    margin-top: 30px;
+}
+
+.chart-card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 20px;
+    background-color: white;
+}
